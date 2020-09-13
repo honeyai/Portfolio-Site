@@ -1,6 +1,9 @@
 .hero__Image {
+  z-index: 0;
   height: 100%;
-  width: 100vw;
+  width: 99vw;
   background-image: url("../Assets/Room1\ copy.png");
-  border: solid;
+  object-fit: contain;
+  /* background-color: aqua; */
+  /* border: solid; */
 }
