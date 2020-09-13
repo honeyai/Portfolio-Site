@@ -9,12 +9,15 @@ const ColorCascade = () => {
 
   const detectOffScreen = () => {
     const colorBoxes = document.getElementsByClassName("colorBox");
-    console.log(Object.entries(colorBoxes));
-    // if (colorBoxes) {
-    //   colorBoxes.HTMLCollection.map(div => {
-    //     console.log(div.offSetHeight);
-    //   })
-    // }
+    const colorBoxesArray = Object.entries(colorBoxes);
+    console.log(Object.entries(colorBoxesArray));
+    console.log(colorBoxesArray[0][1].baseURI)
+    
+   
+      colorBoxesArray.map(entry => {
+        console.log(entry[1].offsetHeight);
+      })
+    
   }
 
   useEffect(() => {
