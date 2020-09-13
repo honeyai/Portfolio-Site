@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import ColorCascade from './Components/ColorCascade';
 
 function App() {
   return (
     <div className="App">
-      <h1>Rename Me</h1>
+      <ColorCascade />
     </div>
   );
 }
