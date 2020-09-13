@@ -3,32 +3,25 @@ import "../Styles/animations.css";
 import "../Styles/colorCascade.css";
 
 const ColorCascade = () => {
-  const [isOffScreen, setIsOffScreen] = useState({
-    isOnScreen: true,
-  });
+  const [isOnScreen, setIsOnScreen] = useState(true);
 
-  const detectOffScreen = () => {
-    const colorBoxes = document.getElementsByClassName("colorBox");
-    const colorBoxesArray = Object.entries(colorBoxes);
-    console.log(Object.entries(colorBoxesArray));
-    console.log(colorBoxesArray[0][1].baseURI)
-    
-   
-      colorBoxesArray.map(entry => {
-        console.log(entry[1].offsetHeight);
-      })
-    
-  }
+  const offScreen = () => {
+
+    setTimeout(() => {
+      setIsOnScreen(false);
+    }, 4000);
+
+  };
 
   useEffect(() => {
-    setTimeout(detectOffScreen(), 3000);
+    offScreen();
   }, []);
 
   return (
     <div className="color__CascadeWrapper">
-      <div className="colorBox animation__topDiv"></div>
-      <div className="colorBox animation__midDiv"></div>
-      <div className="colorBox animation__bottomDiv"></div>
+      <div className={isOnScreen? "colorBox animation__topDiv" : "hidden"}></div>
+      <div className={isOnScreen? "colorBox animation__midDiv" : "hidden"}></div>
+      <div className={isOnScreen? "colorBox animation__bottomDiv" : "hidden"}></div>
     </div>
   );
 };
