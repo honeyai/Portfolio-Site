@@ -1,0 +1,26 @@
+.animation__topDiv {
+  grid-row: 1;
+}
+
+.animation__midDiv {
+  grid-row: 1;
+}
+
+.animation__bottomDiv {
+  grid-row: 1;
+}
+
+@keyframes slide_up {
+  from {
+    top: 0rem;
+  }
+  20% {
+    top: 3rem;
+  }
+  50% {
+    top: 50vh;
+  }
+  100% {
+    top: 100vh;
+  }
+}
