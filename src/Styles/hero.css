@@ -6,16 +6,19 @@
   grid-row: 1;
   grid-column: 1;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../Assets/Room1\ copy.png");
+  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../Assets/Images/Room1\ copy.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .hero__text {
-  border: solid;
-  /* background: rgba(0, 0, 0, 0.5); */
+  border-bottom: .5rem dotted;
+  border-top: .5rem dotted;
+  padding-left: 24rem;
+  padding-right: 24rem;
   color: white;
-  font-size: 15rem;
-  font-family: "Cooler Brush";
-  position: fixed;
+  font-size: 8rem;
+  font-family: "Ocean Rush";
+  font-style: italic;
+  /* position: fixed; */
 }

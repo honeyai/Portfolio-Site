@@ -1,41 +1,6 @@
 @font-face {
-  font-family: "Cooler Brush";
-  src: url("../Assets/Fonts/coolerbrush/COOLERBRUSH.otf") format("opentype");
+  font-family: "Ocean Rush";
+  src: url("../Assets/Fonts/ocean_rush/Ocean Rush DEMO.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: "Engry";
-  src: url("../Assets/Fonts/engry/engry.otf"),
-  format('opentype');
-}
-@font-face {
-  font-family: "Heaters";
-  src: url("../Assets/Fonts/heaters/Heaters.otf"),
-  format('opentype');
-}
-@font-face {
-  font-family: "Ocean Rush";
-  src: url("../Assets/Fonts/ocean_rush/Ocean Rush DEMO.otf"),
-  format('opentype');
-}
-@font-face {
-  font-family: "Butchery";
-  src: url("../Assets/Fonts/Buchery.ttf"),
-  format('truetype');
-}
-@font-face {
-  font-family: "Cross X";
-  src: url("../Assets/Fonts/Cross\ X.ttf"),
-  format('truetype');
-}
-@font-face {
-  font-family: "Off Side";
-  src: url("../Assets/Fonts/Off\ Side.ttf"),
-  format('truetype');
-}
-@font-face {
-  font-family: "Wild Wolf";
-  src: url("../Assets/Fonts/Wild\ Wolf.ttf"),
-  format('truetype');
-} */
