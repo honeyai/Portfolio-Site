@@ -9,7 +9,7 @@ const ColorCascade = () => {
   const offScreen = () => {
     setTimeout(() => {
       setIsOnScreen(false);
-    }, 4000);
+    }, 1500);
   };
 
   useEffect(() => {

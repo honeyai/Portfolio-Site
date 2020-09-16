@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Styles/hero.css";
-import "../Styles/colorCascade.css";
+import "../Styles/fontFamilies.css";
 const Hero = () => {
   return (
     <div className="hero__Image">

@@ -1,6 +1,7 @@
 .color__CascadeWrapper {
   width: 100vw;
-  height: 100vh;
+  /* height: 110vh; */
+  /* margin-bottom: 20vh; */
   display: grid;
   grid-template-columns: repeat(1fr);
 }

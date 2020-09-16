@@ -8,10 +8,10 @@
   grid-column: 1;
   width: 100vw;
   height: 70vh;
-  background-color: #00ffff;
+  background-color: #ff5900;
   border-bottom-right-radius: 15%;
   border-bottom-left-radius: 15%;
-  animation: slide_up 3s ease-out 1s;
+  animation: slide_up 1s ease-out 0.5s;
 }
 
 .animation__midDiv {
@@ -20,9 +20,9 @@
   grid-column: 1;
   width: 100vw;
   height: 80vh;
-  background-color: rgb(39, 151, 151);
+  background-color: rgb(220, 111, 10);
   border-radius: 15%;
-  animation: slide_up 3s ease-out 1s;
+  animation: slide_up 1s ease-out 0.5s;
 }
 
 .animation__bottomDiv {
@@ -31,10 +31,10 @@
   grid-column: 1;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(30, 110, 110);
+  background-color: rgb(223, 138, 11);
   border-radius: 15%;
   margin-top: 10rem;
-  animation: slide_up 3s ease-out 1s;
+  animation: slide_up 1s ease-out 0.5s;
 }
 
 @keyframes slide_up {
@@ -46,6 +46,9 @@
   }
   30% {
     transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-300px);
   }
   100% {
     transform: translateY(-1000px);
