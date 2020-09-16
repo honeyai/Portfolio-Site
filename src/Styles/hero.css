@@ -1,9 +1,20 @@
 .hero__Image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 0;
-  height: 100%;
-  width: 99vw;
-  background-image: url("../Assets/Room1\ copy.png");
-  object-fit: contain;
-  /* background-color: aqua; */
-  /* border: solid; */
+  grid-row: 1;
+  grid-column: 1;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../Assets/Room1\ copy.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 5vw;
+  height: 50%;
+  padding: 0%;
 }

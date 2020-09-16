@@ -1,11 +1,14 @@
 import React from 'react';
 import "../Styles/hero.css";
-
+import "../Styles/colorCascade.css";
 const Hero = () => {
   return (
     <div className="hero__Image">
-      <p>
-      I am the hero with text
+      <p className="hero__text">
+        Your <br/> 
+        ideas <br/> 
+        into <br/> 
+        Reality
       </p>
     </div>
   );

@@ -6,11 +6,9 @@ const ColorCascade = () => {
   const [isOnScreen, setIsOnScreen] = useState(true);
 
   const offScreen = () => {
-
     setTimeout(() => {
       setIsOnScreen(false);
     }, 4000);
-
   };
 
   useEffect(() => {
