@@ -4,5 +4,5 @@
   /* margin-bottom: 20vh; */
   display: grid;
   grid-template-columns: repeat(1fr);
-  position: fixed;
+  /* position: fixed; */
 }
