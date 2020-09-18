@@ -2,40 +2,48 @@
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  background-color: royalblue;
+  background: rgb(238, 237, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+
 .intro__image {
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   overflow: hidden;
   padding: 1rem;
-
-  
+  /* used to wrap with a shape can be a polygon, use firefox devtools */
   float: left;
-  margin-right: 2rem; 
+  margin-right: 5rem; 
   -webkit-shape-outside:circle();
   shape-outside:circle();
 }
 
 .intro__image img {
-  height: 120%;
+  height: 130%;
   width: auto;
-  margin: 0rem -5rem 0rem -3rem;  
+  margin: 0rem -4.5rem 0rem -9.5rem; 
+  transform: scaleX(-1); 
 }
 
 .intro__span {
-  font-size: 4rem;
+  font-size: 4.5rem;
+}
+
+.intro__body span {
+  filter: sepia(0);
 }
 
 .intro__text {
   font-family: 'Abril Fatface', cursive;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  line-height: 1.8; 
+  color: rgb(13, 3, 36);
 }
 
 .intro__body {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
