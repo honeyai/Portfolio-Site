@@ -3,7 +3,6 @@
   height: 100vh;
   z-index: 0;
   background-color: royalblue;
-  display: flex;
 }
 
 .intro__image {
@@ -12,10 +11,31 @@
   border-radius: 50%;
   overflow: hidden;
   padding: 1rem;
+
+  
+  float: left;
+  margin-right: 2rem; 
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
 }
 
 .intro__image img {
   height: 120%;
   width: auto;
   margin: 0rem -5rem 0rem -3rem;  
+}
+
+.intro__span {
+  font-size: 4rem;
+}
+
+.intro__text {
+  font-family: 'Abril Fatface', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__body {
+  font-size: 2rem;
 }
