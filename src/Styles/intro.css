@@ -28,6 +28,13 @@
   width: auto;
   margin: 0rem -4.5rem 0rem -9.5rem; 
   transform: scaleX(-1); 
+  filter: grayscale(100%) sepia(100%) contrast(80%) brightness(80%);
+  transition: ease-out 0.1s;
+  cursor: pointer;
+}
+
+.intro__image img:hover {
+  filter: none;
 }
 
 .intro__span {
