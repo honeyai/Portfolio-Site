@@ -39,6 +39,7 @@
 
 .intro__span {
   font-size: 4.5rem;
+  display: flex;
 }
 
 .intro__body span {
@@ -53,4 +54,26 @@
 
 .intro__body {
   font-size: 2.5rem;
+}
+
+.intro__emojiAnimate {
+  animation: waving 3s ease-in-out ;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
