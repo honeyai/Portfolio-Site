@@ -57,7 +57,8 @@
 }
 
 .intro__emojiAnimate {
-  animation: waving 3s ease-in-out ;
+  animation: waving 1s linear ;
+  animation-iteration-count: 2;
 }
 
 @keyframes waving {
