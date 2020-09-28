@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "../Styles/intro.css";
 import myPic from "../Assets/Images/myPic.jpg"; // Tell webpack this JS file uses this image
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-const Intro = ({ref, func}) => {
+const Intro = ({ ref, func }) => {
   //i want my animation to trigger th second that intro__wrapper is right at the top of the screen
 
   const [startAnimation, setAnimate] = useState(false);
@@ -36,15 +38,17 @@ const Intro = ({ref, func}) => {
           <span className="intro__body">My name is Jessica Sanchez.</span>
           <br></br>
           <span className="intro__body">
-            {" "}I'm a <a onClick={func}> full stack developer </a>, 
+            {" "}
+            I'm a <a onClick={func}> full stack developer </a>,
             <a
               href="https://www.instagram.com/owlturdeth/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            {" "}artist
+              {" "}
+              artist
             </a>
-            , and a <a > polyglot </a>.
+            , and a <a> polyglot </a>.
           </span>
         </p>
       </span>
