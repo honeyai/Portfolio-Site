@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/intro.css";
 import myPic from "../Assets/Images/myPic.jpg"; // Tell webpack this JS file uses this image
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-const Intro = ({ ref, func }) => {
-  //i want my animation to trigger th second that intro__wrapper is right at the top of the screen
+const Intro = ({ func }) => {
 
   const [startAnimation, setAnimate] = useState(false);
 
@@ -19,6 +18,28 @@ const Intro = ({ ref, func }) => {
       setAnimate(true);
     }
   });
+
+  //i want my anchors to scroll to specific pplaces, will probably have to render <Portfolio /> in here. with <Link/> wrap. 
+
+  useEffect( () => {
+    Events.scrollEvent.register('begin', (to, element) => {
+      console.log('begin', arguments);
+    });
+
+    Events.scrollEvent.register('end', (to, element) => {
+      console.log('end', arguments);
+    });
+
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove('begin');
+      Events.scrollEvent.remove('end');
+    }
+  });
+
+  const scrollToTop = () => scroll.scrollToTop();
+
 
   return (
     <div className="intro__wrapper">
@@ -39,7 +60,7 @@ const Intro = ({ ref, func }) => {
           <br></br>
           <span className="intro__body">
             {" "}
-            I'm a <a onClick={func}> full stack developer </a>,
+            I'm a <a onClick={scrollToTop}> full stack developer </a>,
             <a
               href="https://www.instagram.com/owlturdeth/"
               target="_blank"
