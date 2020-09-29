@@ -12,9 +12,8 @@ function App() {
     <div className="App">
       <ColorCascade />
       <div className="App__parallaxWindow"></div>
-      <Intro func={scrollToTop}/>
+      <Intro />
       <Projects />
-
     </div>
   );
 }

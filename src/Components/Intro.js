@@ -4,8 +4,9 @@ import myPic from "../Assets/Images/myPic.jpg"; // Tell webpack this JS file use
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Projects from "./Projects";
 
-const Intro = ({ func }) => {
+const Intro = () => {
 
   const [startAnimation, setAnimate] = useState(false);
 
@@ -23,11 +24,11 @@ const Intro = ({ func }) => {
 
   useEffect( () => {
     Events.scrollEvent.register('begin', (to, element) => {
-      console.log('begin', arguments);
+      // console.log('begin', arguments);
     });
 
     Events.scrollEvent.register('end', (to, element) => {
-      console.log('end', arguments);
+      // console.log('end', arguments);
     });
 
     scrollSpy.update();
@@ -38,7 +39,7 @@ const Intro = ({ func }) => {
     }
   });
 
-  const scrollToTop = () => scroll.scrollToTop();
+  const scrollTo = () => scroll.scrollTo(<Projects />);
 
 
   return (
@@ -60,7 +61,7 @@ const Intro = ({ func }) => {
           <br></br>
           <span className="intro__body">
             {" "}
-            I'm a <a onClick={scrollToTop}> full stack developer </a>,
+            I'm a <a onClick={scrollTo}> full stack developer </a>,
             <a
               href="https://www.instagram.com/owlturdeth/"
               target="_blank"
