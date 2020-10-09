@@ -1,9 +1,10 @@
 import React from 'react';
 import Typography from '@material-ui/core';
-const ProjectCard = ({title, description, body}) => {
+
+const ProjectCard = ({title, description, body, image}) => {
   return (
     <div className="projectCard__wrapper">
-      <div className="projectCard__image"></div>
+      <div className="projectCard__image" style={ image }></div>
       <div className="projectCard__text"> 
         <Typography variant="h2" gutterBottom>
           {title}
