@@ -8,7 +8,7 @@ const Projects = () => {
         <ProjectCard 
           title="Adventurer's Market Place"
           description="Come sell you wares"
-          body="I'm a fan of Dungeons and Dragons"
+          body="I'm a fan of Dungeons and Dragons "
         />
       </div>
     </a>
