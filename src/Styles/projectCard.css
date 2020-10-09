@@ -1,0 +1,20 @@
+#projectCard__wrapper {
+  width: 25rem;
+  padding: 1rem;
+  /* border: red solid; */
+}
+
+.projectCard__text {
+  white-space: pre-wrap;
+}
+
+.projectCard__image {
+  margin-bottom: 1rem;
+  width: 100%;
+  object-fit: cover;
+  /* border: solid; */
+}
+
+a {
+  text-decoration: none;
+}

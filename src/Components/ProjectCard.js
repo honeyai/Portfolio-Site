@@ -1,12 +1,13 @@
 import React from 'react';
-import Typography from '@material-ui/core';
-
+import { Card, Typography } from '@material-ui/core';
+import '../Styles/projectCard.css';
 const ProjectCard = ({title, description, body, image}) => {
   return (
-    <div className="projectCard__wrapper">
-      <div className="projectCard__image" style={ image }></div>
+    <Card id="projectCard__wrapper">
+      {/* <div className="projectCard__image" style={ {backgroundImage:`url(${image})`} }></div> */}
+      <img src={image} className="projectCard__image"/>
       <div className="projectCard__text"> 
-        <Typography variant="h2" gutterBottom>
+        <Typography variant="h5" gutterBottom>
           {title}
         </Typography>
         <Typography variant="subtitle2" gutterBottom>
@@ -16,7 +17,7 @@ const ProjectCard = ({title, description, body, image}) => {
           {body}
         </Typography>
       </div>
-    </div>
+    </Card>
   );
 };
 
