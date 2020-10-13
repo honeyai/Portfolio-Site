@@ -1,7 +1,7 @@
 #projectCard__wrapper {
   width: 25rem;
   padding: 1rem;
-  /* border: red solid; */
+  border: red solid;
 }
 
 .projectCard__text {
@@ -12,7 +12,6 @@
   margin-bottom: 1rem;
   width: 100%;
   object-fit: cover;
-  /* border: solid; */
 }
 
 a {
